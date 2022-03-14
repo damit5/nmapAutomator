@@ -1,13 +1,26 @@
+# Docker
+
+在原来基础上添加docker容器，方便使用
+
+```shell
+git clone https://github.com/damit5/nmapAutomator
+git submodule init
+git submodule update
+docker build -t nmapautomator
+```
+
+
+
 # nmapAutomator
 
 A script you can run in the background!
-  
+
 ![nmapAutomator](https://i.imgur.com/3cMJIPr.gif)
-  
+
 ## Summary
 
 The main goal for this script is to automate the process of enumeration & recon that is run every time, and instead focus our attention on real pentesting.  
-  
+
 This will ensure two things:  
 1. Automate nmap scans. 
 2. Always have some recon running in the background. 
@@ -51,7 +64,7 @@ nmapAutomator saves the output of each type of scan is saved into a separate fil
 The entire script output is also saved, which you can view with `less -r outputDir/nmapAutomator_host_type.txt`, or you can simply `cat` it.
 
 -----
-  
+
 ## Requirements:
 [ffuf](https://github.com/ffuf/ffuf), which we can install with:
 ```bash
@@ -71,10 +84,10 @@ Other recon tools used within the script include:
 |[droopescan](https://github.com/droope/droopescan)|[smbmap](https://github.com/ShawnDEvans/smbmap)|[enum4linux](https://github.com/portcullislabs/enum4linux)|[dnsrecon](https://github.com/darkoperator/dnsrecon)|[odat](https://github.com/quentinhardy/odat)|
 |[smtp-user-enum](https://github.com/pentestmonkey/smtp-user-enum)|snmp-check|snmpwalk|ldapsearch||
 
-  
+
 Most of these should be installed by default in [Parrot OS](https://www.parrotsec.org) and [Kali Linux](https://www.kali.org).  
 *If any recon recommended tools are found to be missing, they will be automatically omitted, and the user will be notified.*
-  
+
 ## Installation:
 ```bash
 git clone https://github.com/21y4d/nmapAutomator.git
