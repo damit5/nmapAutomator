@@ -4,6 +4,7 @@
 
 ```shell
 git clone https://github.com/damit5/nmapAutomator
+cd nmapAutomator
 git submodule init
 git submodule update
 docker build -t nmapautomator
